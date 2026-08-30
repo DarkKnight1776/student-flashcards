@@ -16,7 +16,7 @@
         --accent-dim: #8fa79a;
         font-family: Georgia, &quot;Iowan Old Style&quot;, serif;
         color: var(--ink);
-        max-width: 480px;
+        max-width: 640px;
         margin: 0 auto;
         padding: 24px 16px 40px;
         min-height: 100vh;
@@ -167,7 +167,7 @@
       background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 3px;
-      min-height: 280px;
+      min-height: 320px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -180,7 +180,7 @@
         position:absolute; top:10px; left:14px;
         font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
       ">${flipped ? "definition" : "term"}</span>
-      <p style="font-size:${flipped ? "20px" : "27px"}; line-height:1.5; margin:0; max-width:400px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
+      <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
     </div>
 
     <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
