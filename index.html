@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&P1 Flashcards</title>
+  </head>
+  <body style="margin: 0; background: #eeece3">
+    <div
+      id="app"
+      style="
+        --ink: #23302b;
+        --paper: #f7f5ef;
+        --line: #c9c2ae;
+        --accent: #5b7a68;
+        --accent-dim: #8fa79a;
+        font-family: Georgia, &quot;Iowan Old Style&quot;, serif;
+        color: var(--ink);
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+        min-height: 100vh;
+        box-sizing: border-box;
+      "
+    ></div>
+
+    <script>
+      let cards = [];
+      let index = 0;
+      let flipped = false;
+      let loaded = false;
+      let loadError = false;
+
+      const app = document.getElementById("app");
+
+      function esc(s) {
+        return s
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      async function load() {
+        try {
+          const res = await fetch("cards.json");
+          cards = await res.json();
+        } catch (e) {
+          loadError = true;
+        }
+        loaded = true;
+        render();
+      }
+
+      function next() {
+        if (!cards.length) return;
+        index = (index + 1) % cards.length;
+        flipped = false;
+        render();
+      }
+
+      function prev() {
+        if (!cards.length) return;
+        index = (index - 1 + cards.length) % cards.length;
+        flipped = false;
+        render();
+      }
+
+      function flip() {
+        if (!cards.length) return;
+        flipped = !flipped;
+        render();
+      }
+
+      function render() {
+        if (!loaded) {
+          app.innerHTML = `<p style="text-align:center; color:var(--accent-dim);">Loading cards…</p>`;
+          return;
+        }
+
+        if (loadError || !cards.length) {
+          app.innerHTML = `<p style="text-align:center; color:var(--accent-dim);">Couldn't load cards.json — make sure it's in the same folder as this page.</p>`;
+          return;
+        }
+
+        const count = cards.length;
+        const card = cards[index];
+
+        app.innerHTML = `
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+      <h1 style="font-size:20px; margin:0; font-weight:normal; letter-spacing:0.3px;">A&amp;P1 Cards</h1>
+      <span style="font-size:13px; color:var(--accent-dim);">${index + 1} of ${count}</span>
+    </div>
+
+    <div id="card" style="
+      cursor:pointer;
+      user-select:none;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      min-height: 220px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding: 28px 20px;
+      box-shadow: 0 1px 0 var(--line);
+      position: relative;
+    ">
+      <span style="
+        position:absolute; top:10px; left:14px;
+        font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
+      ">${flipped ? "definition" : "term"}</span>
+      <p style="font-size:${flipped ? "17px" : "22px"}; line-height:1.5; margin:0; max-width:380px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
+    </div>
+
+    <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
+      <button id="prevBtn" title="Previous" style="${btnStyle()}">&#8592;</button>
+      <button id="flipBtn" style="${btnStyle(true)}">Flip</button>
+      <button id="nextBtn" title="Next" style="${btnStyle()}">&#8594;</button>
+    </div>
+  `;
+
+        document.getElementById("card").onclick = flip;
+        document.getElementById("flipBtn").onclick = flip;
+        document.getElementById("prevBtn").onclick = prev;
+        document.getElementById("nextBtn").onclick = next;
+      }
+
+      function btnStyle(filled) {
+        return `
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: 1px solid var(--accent);
+    background: ${filled ? "var(--accent)" : "transparent"};
+    color: ${filled ? "var(--paper)" : "var(--accent)"};
+    cursor: pointer;
+  `;
+      }
+
+      document.addEventListener("keydown", (e) => {
+        const tag = document.activeElement.tagName;
+        if (tag === "INPUT" || tag === "TEXTAREA") return;
+        if (e.key === "ArrowRight") next();
+        else if (e.key === "ArrowLeft") prev();
+        else if (e.key === " ") {
+          e.preventDefault();
+          flip();
+        }
+      });
+
+      load();
+    </script>
+  </body>
+</html>
