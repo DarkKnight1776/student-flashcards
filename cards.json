@@ -8,55 +8,203 @@
     "def": "departing from\n\nEx: abnormal, departing from normal"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "acou-",
+    "def": "hearing\n\nExample: acoustics, the science of sound"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "ac-, acro-",
+    "def": "extreme or extremity, peak\n\nEx: acrodermatitis, inflammation of the skin of the extremities"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "ad-",
+    "def": "to, toward\n\nEx: adorbital, toward the orbit"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "aden-, adeno- ",
+    "def": "gland\n\nEx: adenoform, resembling a gland in shape"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "adren-",
+    "def": "toward the kidney\n\nEx: adrenal gland, adjacent to the kidney"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "aero-",
+    "def": "air\n\nEx: aerobic respiration, oxygen-requiring metabolism"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "af-",
+    "def": "toward\n\nEx: afferent neurons, which carry impulses to the central nervous system"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "agon-",
+    "def": "contest\n\nExample: agonistic and antagonistic muscles, which oppose each other"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "alb-",
+    "def": "white\n\nEx: corpus albicans of the ovary, a white scar tissue"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "aliment",
+    "def": "nourish\n\nEx: alimentary canal, or digestive tract"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "allel-",
+    "def": "of one another\n\nEx: alleles, alternative expression of a gene"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "amphi-",
+    "def": "on both sides, of both kinds\n\nEx: amphibian, an organism that is capable of living in water and on land"
   },
   {
-    "term": "Purple carrot",
-    "def": "A purple carrot\n\nExample: this is a purple carrot"
+    "term": "ana-",
+    "def": "apart, up, again\n\nEx: anaphase of mitosis, when the chromosomes separate"
+  },
+  {
+    "term": "anastomos-",
+    "def": "come together\n\nEx: arteriovenous anastomosis, a connection between an artery and a vein"
+  },
+  {
+    "term": "aneurysm",
+    "def": "a widening\n\nEx: aortic aneurysm, a weak spot that causes enlargement of the blood vessel"
+  },
+  {
+    "term": "angi-",
+    "def": "vessel\n\nEx: angitis, inflammation of a lymph vessel or blood vessel"
+  },
+  {
+    "term": "angin-",
+    "def": "choked\n\nEx: angina pectoris, a choked feeling in the chest due to dysfunction of the heart"
+  },
+  {
+    "term": "ant-, anti-",
+    "def": "opposed to, preventing, inhibiting\n\nEx: anticoagulant, a substance that prevents blood coagulation"
+  },
+  {
+    "term": "ante-",
+    "def": "preceding, before\n\nEx: antecubital, in front of the elbow"
+  },
+  {
+    "term": "aort-",
+    "def": "great artery\n\nEx: aorta"
+  },
+  {
+    "term": "ap-, api-",
+    "def": "tip, extremity\n\nEx: apex of the heart"
+  },
+  {
+    "term": "append-",
+    "def": "hang\n\nEx: to appendicular skeleton"
+  },
+  {
+    "term": "aqua- aque-",
+    "def": "water\n\nEx: aqueous solutions"
+  },
+  {
+    "term": "arbor",
+    "def": "tree\n\nEx: arbor vitae of the cerebellum, the tree-like pattern of white matter"
+  },
+  {
+    "term": "areola-",
+    "def": "open space\n\nEx: areolar connective tissue, a loose connective tissue"
+  },
+  {
+    "term": "arrect-",
+    "def": "upright\n\nEx: arrector pili muscles of the skin, which make the hairs stand erect"
+  },
+  {
+    "term": "arthr- arthro-",
+    "def": "joint\n\nEx: arthropathy, any joint disease"
+  },
+  {
+    "term": "artic-",
+    "def": "joint\n\nEx: articular surfaces of bones, the points of connection"
+  },
+  {
+    "term": "atri-",
+    "def": "vestibule\n\nEx: atria, upper chambers of the heart"
+  },
+  {
+    "term": "auscult-",
+    "def": "listen\n\nEx: auscultatory method for measuring blood pressure"
+  },
+  {
+    "term": "aut-, auto-",
+    "def": "self\n\nEx: autologous, self-generated"
+  },
+  {
+    "term": "ax-, axi-, axo-",
+    "def": "axis, axle\n\nEx: axial skeleton, axis of vertebral column"
+  },
+  {
+    "term": "azyg-",
+    "def": "unpaired\n\nEx: azygous vein, an unpaired vessel"
+  },
+  {
+    "term": "baro-",
+    "def": "pressure\n\nEx: baroreceptors for monitoring blood pressure"
+  },
+  {
+    "term": "basal",
+    "def": "base\n\nEx: basal lamina of epithelial basement membrane"
+  },
+  {
+    "term": " bi-",
+    "def": "two\n\nEx: bicuspid, having two cusps"
+  },
+  {
+    "term": "bili-",
+    "def": "bile\n\nEx: bilirubin, a bile pigment"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx: sdf"
   }
 ]
