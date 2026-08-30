@@ -156,55 +156,255 @@
     "def": "bile\n\nEx: bilirubin, a bile pigment"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "bio-",
+    "def": "life\n\nEx: biology, the study of life and living organisms"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "blast-",
+    "def": "bud, germ\n\nEx: blastocyte, undifferentiated embryonic cell"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "brachi-",
+    "def": "arm\n\nEx: brachial plexus of peripheral nervous system supplies the arm"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "brady-",
+    "def": "slow\n\nEx: bradycardia, abnormally slow heart rate"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "brev-",
+    "def": "short\n\nEx: fibularis brevis, a short leg muscle"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "broncho,",
+    "def": "bronchus\n\nEx: bronchospasm, spasmodic contraction of bronchial muscle"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "bucco-",
+    "def": "cheek\n\nEx: buccolabial, pertaining to the cheek and lip"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "calor-",
+    "def": "heat\n\nEx: calories, a measure of energy"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "capill-",
+    "def": "hair\n\nEx: blood and lymph capillaries"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "caput-",
+    "def": "head\n\nEx: decapitate, remove the head"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "carcin-",
+    "def": "cancer\n\nEx: carcinogen, a cancer-causing agent"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "cardi- cardio-",
+    "def": "heart\n\nEx: cardiotoxic, harmful to the heart"
   },
   {
-    "term": "",
-    "def": "\n\nEx: sdf"
+    "term": "carneo-",
+    "def": "flesh\n\nEx: trabeculae carneae, ridges of muscle in the ventricles of the heart"
+  },
+  {
+    "term": "carot-",
+    "def": "(1) carrot, (2) stupor\n\nEx: (1) carotene, an orange pigment, (2) carotid arteries in the neck, blockage of which causes fainting"
+  },
+  {
+    "term": "cata-",
+    "def": "down\n\nEx: catabolism, chemical breakdown"
+  },
+  {
+    "term": "caud-",
+    "def": "tail\n\nEx:caudal (directional term)"
+  },
+  {
+    "term": "cec-",
+    "def": "blind\n\nEx: cecum of large intestine, a blind-ended pouch"
+  },
+  {
+    "term": "cele-",
+    "def": "abdominal\n\nEx: celiac artery, in the abdomen"
+  },
+  {
+    "term": "cephal-",
+    "def": "head\n\nEx: cephalometer, an instrument for measuring the head"
+  },
+  {
+    "term": "cerebro-",
+    "def": "brain\n\nEx: especially the cerebrum cerebrospinal, pertaining to the brain and spinal cord"
+  },
+  {
+    "term": "cervic-, cervix",
+    "def": "neck\n\nEx: cervix of the uteris"
+  },
+  {
+    "term": "chiasm-",
+    "def": "crossing\n\nEx: optic chiasma, where optic nerves nerves cross"
+  },
+  {
+    "term": "chole-",
+    "def": "bile\n\nEx: cholesterol, cholecystokinin, a bile-secreting hormone"
+  },
+  {
+    "term": "chondr-",
+    "def": "cartilage\n\nEx: chondrogenic, giving rise to cartilage"
+  },
+  {
+    "term": "chrom-",
+    "def": "colored\n\nEx: chromosome, so named because they stain darkly"
+  },
+  {
+    "term": "cili-",
+    "def": "small hair\n\nEx: cilated epithelium"
+  },
+  {
+    "term": "circum-",
+    "def": "around\n\nEx: circumnuclear, surrounding the nucleus"
+  },
+  {
+    "term": "clavic-",
+    "def": "key\n\nEx: clavicle, a 'skeleton key'"
+  },
+  {
+    "term": "co-, con-",
+    "def": "together\n\nEx: concentric, common center, together in the center"
+  },
+  {
+    "term": "coccy-",
+    "def": "cuckoo\n\nEx: coccyx, which is beak-shaped"
+  },
+  {
+    "term": "cochlea-",
+    "def": "snail shell\n\nEx: the cochlea of the inner ear, which is coiled like a snail shell"
+  },
+  {
+    "term": "coel-",
+    "def": "hollow\n\nEx: coelom, the ventral body cavity"
+  },
+  {
+    "term": "commis-",
+    "def": "united\n\nEx: gray commissure of the spinal cord connects the two columns of gray matter"
+  },
+  {
+    "term": "concha",
+    "def": "shell\n\nEx: nasal conchae, coiled shelves of bone in the nasal cavity"
+  },
+  {
+    "term": "contra-",
+    "def": "against, opposite\n\nEx: contraceptive, agent preventing conception"
+  },
+  {
+    "term": "corn-, cornu-",
+    "def": "horn\n\nEx: stratum corneum, outer layer of the skin composed of (horny) cells"
+  },
+  {
+    "term": "corona",
+    "def": "crown\n\nEx: coronal suture of the skull"
+  },
+  {
+    "term": "corp-",
+    "def": "body\n\nEx: corpse, corpus luteum, hormone-secreting body in the ovary"
+  },
+  {
+    "term": "cort-",
+    "def": "bark\n\nEx: cortex, the outer layer of the brain, kidney, adrenal glands, and lymph nodes"
+  },
+  {
+    "term": "cost-",
+    "def": "rib\n\nEx: intercostal, between the ribs"
+  },
+  {
+    "term": "crani-",
+    "def": "skull\n\nEx: craniotomy, a skull operation"
+  },
+  {
+    "term": "crypt-",
+    "def": "hidden\n\nEx: cryptomenorrhea, a condition in which menstrual symptoms are experienced but no external loss of blood occurs"
+  },
+  {
+    "term": "cusp-",
+    "def": "pointed\n\nEx: bicuspid, tricuspid valves of the heart"
+  },
+  {
+    "term": "cutic-",
+    "def": "skin\n\nEx: cuticle of the nail"
+  },
+  {
+    "term": "cyan-",
+    "def": "blue\n\nEx: cyanosis, blue color of the skin due to lack of oxygen"
+  },
+  {
+    "term": "cyst-",
+    "def": "sac\n\nEx: bladder cystitis, inflammation of the urinary bladder"
+  },
+  {
+    "term": "cyt-",
+    "def": "cell\n\nEx: cytology, the study of cells"
+  },
+  {
+    "term": "de-",
+    "def": "undoing, reversal, loss, removal\n\nEx: deactivation, becoming inactive"
+  },
+  {
+    "term": "decid-",
+    "def": "falling off\n\nEx: deciduous (milk) teeth"
+  },
+  {
+    "term": "delta",
+    "def": "triangular\n\nEx: deltoid muscle, roughly triangular in shape"
+  },
+  {
+    "term": "den-, dent-",
+    "def": "tooth\n\nEx: dentin of the tooth"
+  },
+  {
+    "term": "dendr-",
+    "def": "tree, branch\n\nEx: dendrites, branches of a neuron"
+  },
+  {
+    "term": "derm-",
+    "def": "skin\n\nEx: dermis- deep layer of the skin"
+  },
+  {
+    "term": "desm-",
+    "def": "bond\n\nEx: desmosome, which binds adjacent epithelial cells"
+  },
+  {
+    "term": "di-",
+    "def": "twice, double\n\nEx: dimorphism, having two forms"
+  },
+  {
+    "term": "dia-",
+    "def": "through, between\n\nEx: diaphram, the wall through or between two areas"
+  },
+  {
+    "term": "dialys-",
+    "def": "separate, break apart\n\nEx: kidney dialysis, in which waste products are removed from the blood"
+  },
+  {
+    "term": "diastol-",
+    "def": "stand apart\n\nEx: cardiac diastole, between successive contractions of the heart"
+  },
+  {
+    "term": "diure-",
+    "def": "urinate\n\nEx: diuretic, a drug that increases urine output"
+  },
+  {
+    "term": "dors-",
+    "def": "the back\n\nEx: dorsal, dorsum, dorsiflexion"
+  },
+  {
+    "term": "duc-, duct-",
+    "def": "lead, draw\n\nEx: ductus deferens, tube which carries sperm from the epididymis into the urethra during ejaculation"
+  },
+  {
+    "term": "dura",
+    "def": "hard\n\nEx: dura mater, tough outer meninx"
+  },
+  {
+    "term": "dys-",
+    "def": "difficult, faulty, painful\n\nEx: dyspepsia, disturbed digestion"
   }
 ]
