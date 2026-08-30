@@ -16,7 +16,7 @@
         --accent-dim: #8fa79a;
         font-family: Georgia, &quot;Iowan Old Style&quot;, serif;
         color: var(--ink);
-        max-width: 640px;
+        max-width: 480px;
         margin: 0 auto;
         padding: 24px 16px 40px;
         min-height: 100vh;
@@ -30,6 +30,54 @@
       let flipped = false;
       let loaded = false;
       let loadError = false;
+      let menuOpen = false;
+
+      const THEME_KEY = "ap1-theme";
+      let theme = localStorage.getItem(THEME_KEY) || "light";
+
+      const THEMES = {
+        light: {
+          bg: "#eeece3",
+          ink: "#23302b",
+          paper: "#f7f5ef",
+          line: "#c9c2ae",
+          accent: "#5b7a68",
+          accentDim: "#8fa79a",
+        },
+        dark: {
+          bg: "#141a17",
+          ink: "#dce4de",
+          paper: "#1c2420",
+          line: "#33413a",
+          accent: "#7ea08c",
+          accentDim: "#4d5f56",
+        },
+      };
+
+      function applyTheme() {
+        const t = THEMES[theme];
+        document.body.style.background = t.bg;
+        const app = document.getElementById("app");
+        app.style.setProperty("--ink", t.ink);
+        app.style.setProperty("--paper", t.paper);
+        app.style.setProperty("--line", t.line);
+        app.style.setProperty("--accent", t.accent);
+        app.style.setProperty("--accent-dim", t.accentDim);
+        app.style.color = t.ink;
+      }
+
+      function setTheme(name) {
+        theme = name;
+        localStorage.setItem(THEME_KEY, theme);
+        menuOpen = false;
+        applyTheme();
+        render();
+      }
+
+      function toggleMenu() {
+        menuOpen = !menuOpen;
+        render();
+      }
 
       const app = document.getElementById("app");
 
@@ -87,9 +135,30 @@
         const card = cards[index];
 
         app.innerHTML = `
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px; position:relative;">
       <h1 style="font-size:20px; margin:0; font-weight:normal; letter-spacing:0.3px;">A&amp;P1 Cards</h1>
-      <span style="font-size:13px; color:var(--accent-dim);">${index + 1} of ${count}</span>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-size:13px; color:var(--accent-dim);">${index + 1} of ${count}</span>
+        <button id="gearBtn" title="Settings" style="
+          background:none; border:none; cursor:pointer; font-size:17px;
+          color: var(--accent-dim); padding:2px 4px; line-height:1;
+        ">&#9881;</button>
+      </div>
+      ${
+        menuOpen
+          ? `
+        <div style="
+          position:absolute; top:28px; right:0; z-index:10;
+          background: var(--paper); border:1px solid var(--line); border-radius:4px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+          min-width:120px; overflow:hidden;
+        ">
+          <button id="lightBtn" style="${menuItemStyle(theme === "light")}">Light</button>
+          <button id="darkBtn" style="${menuItemStyle(theme === "dark")}">Dark</button>
+        </div>
+      `
+          : ""
+      }
     </div>
 
     <div id="card" style="
@@ -98,7 +167,7 @@
       background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 3px;
-      min-height: 320px;
+      min-height: 280px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -111,7 +180,7 @@
         position:absolute; top:10px; left:14px;
         font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
       ">${flipped ? "definition" : "term"}</span>
-      <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
+      <p style="font-size:${flipped ? "20px" : "27px"}; line-height:1.5; margin:0; max-width:400px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
     </div>
 
     <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
@@ -127,6 +196,25 @@
         document.getElementById("flipBtn").onclick = flip;
         document.getElementById("prevBtn").onclick = prev;
         document.getElementById("nextBtn").onclick = next;
+        document.getElementById("gearBtn").onclick = (e) => {
+          e.stopPropagation();
+          toggleMenu();
+        };
+        if (menuOpen) {
+          document.getElementById("lightBtn").onclick = () => setTheme("light");
+          document.getElementById("darkBtn").onclick = () => setTheme("dark");
+        }
+      }
+
+      function menuItemStyle(active) {
+        return `
+    display:block; width:100%; text-align:left;
+    font-family: inherit; font-size:14px;
+    padding: 9px 14px;
+    border:none; background: ${active ? "var(--line)" : "transparent"};
+    color: var(--ink);
+    cursor: pointer;
+  `;
       }
 
       function btnStyle(filled) {
@@ -142,6 +230,13 @@
   `;
       }
 
+      document.addEventListener("click", () => {
+        if (menuOpen) {
+          menuOpen = false;
+          render();
+        }
+      });
+
       document.addEventListener("keydown", (e) => {
         const tag = document.activeElement.tagName;
         if (tag === "INPUT" || tag === "TEXTAREA") return;
@@ -153,6 +248,7 @@
         }
       });
 
+      applyTheme();
       load();
     </script>
   </body>
