@@ -16,7 +16,7 @@
         --accent-dim: #8fa79a;
         font-family: Georgia, &quot;Iowan Old Style&quot;, serif;
         color: var(--ink);
-        max-width: 640px;
+        max-width: 820px;
         margin: 0 auto;
         padding: 24px 16px 40px;
         min-height: 100vh;
@@ -32,7 +32,6 @@
       let loaded = false;
       let loadError = false;
       let menuOpen = false;
-      let filterOpen = false;
 
       const THEME_KEY = "ap1-theme";
       const QUIZ_KEY = "ap1-selected-quizzes";
@@ -80,13 +79,6 @@
 
       function toggleMenu() {
         menuOpen = !menuOpen;
-        filterOpen = false;
-        render();
-      }
-
-      function toggleFilter() {
-        filterOpen = !filterOpen;
-        menuOpen = false;
         render();
       }
 
@@ -110,8 +102,8 @@
       }
 
       function applyFilter() {
-        cards = allCards.filter((c) =>
-          selectedQuizzes.has(c.quiz || "Unsorted"),
+        cards = allCards.filter(
+          (c) => selectedQuizzes.has(c.quiz || "Unsorted") && c.term && c.def,
         );
         index = 0;
         flipped = false;
@@ -200,14 +192,10 @@
         const quizList = getQuizList();
 
         app.innerHTML = `
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px; position:relative;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px; position:relative;">
       <h1 style="font-size:20px; margin:0; font-weight:normal; letter-spacing:0.3px;">A&amp;P1 Cards</h1>
       <div style="display:flex; align-items:center; gap:14px;">
         <span style="font-size:13px; color:var(--accent-dim);">${count ? index + 1 + " of " + count : "0 cards"}</span>
-        <button id="filterBtn" title="Choose quizzes" style="
-          background:none; border:none; cursor:pointer; font-size:15px;
-          color: var(--accent-dim); padding:2px 4px; line-height:1;
-        ">&#9776;</button>
         <button id="gearBtn" title="Settings" style="
           background:none; border:none; cursor:pointer; font-size:17px;
           color: var(--accent-dim); padding:2px 4px; line-height:1;
@@ -228,72 +216,94 @@
       `
           : ""
       }
-      ${
-        filterOpen
-          ? `
-        <div id="filterPanel" style="
-          position:absolute; top:28px; right:0; z-index:10;
-          background: var(--paper); border:1px solid var(--line); border-radius:4px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-          min-width:190px; overflow:hidden; padding:6px 0;
-        ">
-          <div style="padding:6px 14px 8px; font-size:11px; color:var(--accent-dim); letter-spacing:0.4px; border-bottom:1px solid var(--line); margin-bottom:4px;">STUDY WHICH QUIZZES</div>
+    </div>
+
+    <div style="display:flex; gap:18px; align-items:flex-start;">
+      <div style="flex:1; min-width:0;">
+        ${
+          card
+            ? `
+          <div id="card" style="
+            cursor:pointer;
+            user-select:none;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 3px;
+            min-height: 320px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding: 28px 20px;
+            box-shadow: 0 1px 0 var(--line);
+            position: relative;
+          ">
+            <span style="
+              position:absolute; top:10px; left:14px;
+              font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
+            ">${flipped ? "definition" : "term"}${card.quiz ? " · " + esc(card.quiz) : ""}</span>
+            <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
+          </div>
+
+          <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
+            <button id="prevBtn" title="Previous" style="${btnStyle()}">&#8592;</button>
+            <button id="flipBtn" style="${btnStyle(true)}">Flip</button>
+            <button id="nextBtn" title="Next" style="${btnStyle()}">&#8594;</button>
+          </div>
+
+          <p style="text-align:center; font-size:12px; color:var(--accent-dim); margin-top:14px;">Use arrow keys to navigate, space to flip</p>
+        `
+            : `
+          <div style="border: 1px dashed var(--line); border-radius: 3px; padding: 60px 20px; text-align:center; color: var(--accent-dim);">
+            No quizzes selected — pick at least one on the right.
+          </div>
+        `
+        }
+      </div>
+
+      <div style="
+        width:150px;
+        flex-shrink:0;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 12px;
+        box-sizing: border-box;
+      ">
+        <div style="font-size:11px; color:var(--accent-dim); letter-spacing:0.5px; margin-bottom:10px;">STUDY SET</div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
           ${quizList
             .map(
               (q) => `
-            <label style="display:flex; align-items:center; gap:8px; padding: 7px 14px; font-size:14px; cursor:pointer;">
-              <input type="checkbox" class="quizCheck" data-quiz="${esc(q)}" ${selectedQuizzes.has(q) ? "checked" : ""} style="cursor:pointer;">
-              ${esc(q)}
-            </label>
+            <button class="quizBtn" data-quiz="${esc(q)}" style="
+              font-family: inherit;
+              font-size: 14px;
+              text-align:left;
+              padding: 8px 10px;
+              border-radius: 5px;
+              border: 1px solid ${selectedQuizzes.has(q) ? "var(--accent)" : "var(--line)"};
+              background: ${selectedQuizzes.has(q) ? "var(--accent)" : "transparent"};
+              color: ${selectedQuizzes.has(q) ? "var(--paper)" : "var(--ink)"};
+              cursor: pointer;
+              transition: background 0.12s, color 0.12s, border-color 0.12s;
+            ">${esc(q)}</button>
           `,
             )
             .join("")}
-          <button id="selectAllBtn" style="${menuItemStyle(false)} border-top:1px solid var(--line); margin-top:4px; font-size:13px; color:var(--accent);">Select all</button>
         </div>
-      `
-          : ""
-      }
+        <button id="selectAllBtn" style="
+          font-family: inherit;
+          font-size: 12px;
+          margin-top:12px;
+          padding: 0;
+          border:none;
+          background:none;
+          color: var(--accent);
+          text-decoration: underline;
+          cursor: pointer;
+        ">Select all</button>
+      </div>
     </div>
-
-    ${
-      card
-        ? `
-      <div id="card" style="
-        cursor:pointer;
-        user-select:none;
-        background: var(--paper);
-        border: 1px solid var(--line);
-        border-radius: 3px;
-        min-height: 320px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-align:center;
-        padding: 28px 20px;
-        box-shadow: 0 1px 0 var(--line);
-        position: relative;
-      ">
-        <span style="
-          position:absolute; top:10px; left:14px;
-          font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
-        ">${flipped ? "definition" : "term"}${card.quiz ? " · " + esc(card.quiz) : ""}</span>
-        <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
-      </div>
-
-      <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
-        <button id="prevBtn" title="Previous" style="${btnStyle()}">&#8592;</button>
-        <button id="flipBtn" style="${btnStyle(true)}">Flip</button>
-        <button id="nextBtn" title="Next" style="${btnStyle()}">&#8594;</button>
-      </div>
-
-      <p style="text-align:center; font-size:12px; color:var(--accent-dim); margin-top:14px;">Use arrow keys to navigate, space to flip</p>
-    `
-        : `
-      <div style="border: 1px dashed var(--line); border-radius: 3px; padding: 60px 20px; text-align:center; color: var(--accent-dim);">
-        No quizzes selected — pick at least one from the menu (&#9776;) above.
-      </div>
-    `
-    }
   `;
 
         if (card) {
@@ -306,28 +316,14 @@
           e.stopPropagation();
           toggleMenu();
         };
-        document.getElementById("filterBtn").onclick = (e) => {
-          e.stopPropagation();
-          toggleFilter();
-        };
         if (menuOpen) {
           document.getElementById("lightBtn").onclick = () => setTheme("light");
           document.getElementById("darkBtn").onclick = () => setTheme("dark");
         }
-        if (filterOpen) {
-          document.querySelectorAll(".quizCheck").forEach((cb) => {
-            cb.onclick = (e) => {
-              e.stopPropagation();
-              toggleQuiz(cb.dataset.quiz);
-            };
-          });
-          document.getElementById("selectAllBtn").onclick = (e) => {
-            e.stopPropagation();
-            selectAllQuizzes();
-          };
-          const panel = document.getElementById("filterPanel");
-          if (panel) panel.onclick = (e) => e.stopPropagation();
-        }
+        document.querySelectorAll(".quizBtn").forEach((btn) => {
+          btn.onclick = () => toggleQuiz(btn.dataset.quiz);
+        });
+        document.getElementById("selectAllBtn").onclick = selectAllQuizzes;
       }
 
       function menuItemStyle(active) {
@@ -355,9 +351,8 @@
       }
 
       document.addEventListener("click", () => {
-        if (menuOpen || filterOpen) {
+        if (menuOpen) {
           menuOpen = false;
-          filterOpen = false;
           render();
         }
       });
