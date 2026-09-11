@@ -25,15 +25,19 @@
     ></div>
 
     <script>
+      let allCards = [];
       let cards = [];
       let index = 0;
       let flipped = false;
       let loaded = false;
       let loadError = false;
       let menuOpen = false;
+      let filterOpen = false;
 
       const THEME_KEY = "ap1-theme";
+      const QUIZ_KEY = "ap1-selected-quizzes";
       let theme = localStorage.getItem(THEME_KEY) || "light";
+      let selectedQuizzes = null;
 
       const THEMES = {
         light: {
@@ -76,6 +80,13 @@
 
       function toggleMenu() {
         menuOpen = !menuOpen;
+        filterOpen = false;
+        render();
+      }
+
+      function toggleFilter() {
+        filterOpen = !filterOpen;
+        menuOpen = false;
         render();
       }
 
@@ -89,10 +100,63 @@
           .replace(/"/g, "&quot;");
       }
 
+      function getQuizList() {
+        const seen = [];
+        for (const c of allCards) {
+          const q = c.quiz || "Unsorted";
+          if (!seen.includes(q)) seen.push(q);
+        }
+        return seen;
+      }
+
+      function applyFilter() {
+        cards = allCards.filter((c) =>
+          selectedQuizzes.has(c.quiz || "Unsorted"),
+        );
+        index = 0;
+        flipped = false;
+      }
+
+      function toggleQuiz(name) {
+        if (selectedQuizzes.has(name)) {
+          if (selectedQuizzes.size > 1) selectedQuizzes.delete(name);
+        } else {
+          selectedQuizzes.add(name);
+        }
+        localStorage.setItem(QUIZ_KEY, JSON.stringify([...selectedQuizzes]));
+        applyFilter();
+        render();
+      }
+
+      function selectAllQuizzes() {
+        selectedQuizzes = new Set(getQuizList());
+        localStorage.setItem(QUIZ_KEY, JSON.stringify([...selectedQuizzes]));
+        applyFilter();
+        render();
+      }
+
       async function load() {
         try {
           const res = await fetch("cards.json");
-          cards = await res.json();
+          allCards = await res.json();
+
+          const quizList = getQuizList();
+          let saved = null;
+          try {
+            const raw = localStorage.getItem(QUIZ_KEY);
+            if (raw) saved = JSON.parse(raw);
+          } catch (e) {}
+
+          if (
+            saved &&
+            saved.length &&
+            saved.every((q) => quizList.includes(q))
+          ) {
+            selectedQuizzes = new Set(saved);
+          } else {
+            selectedQuizzes = new Set(quizList);
+          }
+          applyFilter();
         } catch (e) {
           loadError = true;
         }
@@ -126,19 +190,24 @@
           return;
         }
 
-        if (loadError || !cards.length) {
+        if (loadError) {
           app.innerHTML = `<p style="text-align:center; color:var(--accent-dim);">Couldn't load cards.json — make sure it's in the same folder as this page.</p>`;
           return;
         }
 
         const count = cards.length;
-        const card = cards[index];
+        const card = count ? cards[index] : null;
+        const quizList = getQuizList();
 
         app.innerHTML = `
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:18px; position:relative;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px; position:relative;">
       <h1 style="font-size:20px; margin:0; font-weight:normal; letter-spacing:0.3px;">A&amp;P1 Cards</h1>
-      <div style="display:flex; align-items:center; gap:12px;">
-        <span style="font-size:13px; color:var(--accent-dim);">${index + 1} of ${count}</span>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <span style="font-size:13px; color:var(--accent-dim);">${count ? index + 1 + " of " + count : "0 cards"}</span>
+        <button id="filterBtn" title="Choose quizzes" style="
+          background:none; border:none; cursor:pointer; font-size:15px;
+          color: var(--accent-dim); padding:2px 4px; line-height:1;
+        ">&#9776;</button>
         <button id="gearBtn" title="Settings" style="
           background:none; border:none; cursor:pointer; font-size:17px;
           color: var(--accent-dim); padding:2px 4px; line-height:1;
@@ -159,50 +228,105 @@
       `
           : ""
       }
+      ${
+        filterOpen
+          ? `
+        <div id="filterPanel" style="
+          position:absolute; top:28px; right:0; z-index:10;
+          background: var(--paper); border:1px solid var(--line); border-radius:4px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+          min-width:190px; overflow:hidden; padding:6px 0;
+        ">
+          <div style="padding:6px 14px 8px; font-size:11px; color:var(--accent-dim); letter-spacing:0.4px; border-bottom:1px solid var(--line); margin-bottom:4px;">STUDY WHICH QUIZZES</div>
+          ${quizList
+            .map(
+              (q) => `
+            <label style="display:flex; align-items:center; gap:8px; padding: 7px 14px; font-size:14px; cursor:pointer;">
+              <input type="checkbox" class="quizCheck" data-quiz="${esc(q)}" ${selectedQuizzes.has(q) ? "checked" : ""} style="cursor:pointer;">
+              ${esc(q)}
+            </label>
+          `,
+            )
+            .join("")}
+          <button id="selectAllBtn" style="${menuItemStyle(false)} border-top:1px solid var(--line); margin-top:4px; font-size:13px; color:var(--accent);">Select all</button>
+        </div>
+      `
+          : ""
+      }
     </div>
 
-    <div id="card" style="
-      cursor:pointer;
-      user-select:none;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 3px;
-      min-height: 320px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding: 28px 20px;
-      box-shadow: 0 1px 0 var(--line);
-      position: relative;
-    ">
-      <span style="
-        position:absolute; top:10px; left:14px;
-        font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
-      ">${flipped ? "definition" : "term"}</span>
-      <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
-    </div>
+    ${
+      card
+        ? `
+      <div id="card" style="
+        cursor:pointer;
+        user-select:none;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 3px;
+        min-height: 320px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        padding: 28px 20px;
+        box-shadow: 0 1px 0 var(--line);
+        position: relative;
+      ">
+        <span style="
+          position:absolute; top:10px; left:14px;
+          font-size:11px; color:var(--accent-dim); letter-spacing:0.4px;
+        ">${flipped ? "definition" : "term"}${card.quiz ? " · " + esc(card.quiz) : ""}</span>
+        <p style="font-size:${flipped ? "24px" : "32px"}; line-height:1.5; margin:0; max-width:540px; white-space:pre-wrap;">${esc(flipped ? card.def : card.term)}</p>
+      </div>
 
-    <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
-      <button id="prevBtn" title="Previous" style="${btnStyle()}">&#8592;</button>
-      <button id="flipBtn" style="${btnStyle(true)}">Flip</button>
-      <button id="nextBtn" title="Next" style="${btnStyle()}">&#8594;</button>
-    </div>
+      <div style="display:flex; justify-content:center; gap:28px; align-items:center; margin-top:20px;">
+        <button id="prevBtn" title="Previous" style="${btnStyle()}">&#8592;</button>
+        <button id="flipBtn" style="${btnStyle(true)}">Flip</button>
+        <button id="nextBtn" title="Next" style="${btnStyle()}">&#8594;</button>
+      </div>
 
-    <p style="text-align:center; font-size:12px; color:var(--accent-dim); margin-top:14px;">Use arrow keys to navigate, space to flip</p>
+      <p style="text-align:center; font-size:12px; color:var(--accent-dim); margin-top:14px;">Use arrow keys to navigate, space to flip</p>
+    `
+        : `
+      <div style="border: 1px dashed var(--line); border-radius: 3px; padding: 60px 20px; text-align:center; color: var(--accent-dim);">
+        No quizzes selected — pick at least one from the menu (&#9776;) above.
+      </div>
+    `
+    }
   `;
 
-        document.getElementById("card").onclick = flip;
-        document.getElementById("flipBtn").onclick = flip;
-        document.getElementById("prevBtn").onclick = prev;
-        document.getElementById("nextBtn").onclick = next;
+        if (card) {
+          document.getElementById("card").onclick = flip;
+          document.getElementById("flipBtn").onclick = flip;
+          document.getElementById("prevBtn").onclick = prev;
+          document.getElementById("nextBtn").onclick = next;
+        }
         document.getElementById("gearBtn").onclick = (e) => {
           e.stopPropagation();
           toggleMenu();
         };
+        document.getElementById("filterBtn").onclick = (e) => {
+          e.stopPropagation();
+          toggleFilter();
+        };
         if (menuOpen) {
           document.getElementById("lightBtn").onclick = () => setTheme("light");
           document.getElementById("darkBtn").onclick = () => setTheme("dark");
+        }
+        if (filterOpen) {
+          document.querySelectorAll(".quizCheck").forEach((cb) => {
+            cb.onclick = (e) => {
+              e.stopPropagation();
+              toggleQuiz(cb.dataset.quiz);
+            };
+          });
+          document.getElementById("selectAllBtn").onclick = (e) => {
+            e.stopPropagation();
+            selectAllQuizzes();
+          };
+          const panel = document.getElementById("filterPanel");
+          if (panel) panel.onclick = (e) => e.stopPropagation();
         }
       }
 
@@ -231,8 +355,9 @@
       }
 
       document.addEventListener("click", () => {
-        if (menuOpen) {
+        if (menuOpen || filterOpen) {
           menuOpen = false;
+          filterOpen = false;
           render();
         }
       });

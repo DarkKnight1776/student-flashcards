@@ -1,410 +1,1012 @@
 [
   {
     "term": "a-, an-",
-    "def": "absence, lack\n\nEx: acardia, lack of a heart; anaerobic, in the absence of oxygen"
+    "def": "absence, lack\n\nEx: acardia, lack of a heart; anaerobic, in the absence of oxygen",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ab-",
-    "def": "departing from\n\nEx: abnormal, departing from normal"
+    "def": "departing from\n\nEx: abnormal, departing from normal",
+    "quiz": "Quiz 1"
   },
   {
     "term": "acou-",
-    "def": "hearing\n\nExample: acoustics, the science of sound"
+    "def": "hearing\n\nExample: acoustics, the science of sound",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ac-, acro-",
-    "def": "extreme or extremity, peak\n\nEx: acrodermatitis, inflammation of the skin of the extremities"
+    "def": "extreme or extremity, peak\n\nEx: acrodermatitis, inflammation of the skin of the extremities",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ad-",
-    "def": "to, toward\n\nEx: adorbital, toward the orbit"
+    "def": "to, toward\n\nEx: adorbital, toward the orbit",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aden-, adeno- ",
-    "def": "gland\n\nEx: adenoform, resembling a gland in shape"
+    "def": "gland\n\nEx: adenoform, resembling a gland in shape",
+    "quiz": "Quiz 1"
   },
   {
     "term": "adren-",
-    "def": "toward the kidney\n\nEx: adrenal gland, adjacent to the kidney"
+    "def": "toward the kidney\n\nEx: adrenal gland, adjacent to the kidney",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aero-",
-    "def": "air\n\nEx: aerobic respiration, oxygen-requiring metabolism"
+    "def": "air\n\nEx: aerobic respiration, oxygen-requiring metabolism",
+    "quiz": "Quiz 1"
   },
   {
     "term": "af-",
-    "def": "toward\n\nEx: afferent neurons, which carry impulses to the central nervous system"
+    "def": "toward\n\nEx: afferent neurons, which carry impulses to the central nervous system",
+    "quiz": "Quiz 1"
   },
   {
     "term": "agon-",
-    "def": "contest\n\nExample: agonistic and antagonistic muscles, which oppose each other"
+    "def": "contest\n\nExample: agonistic and antagonistic muscles, which oppose each other",
+    "quiz": "Quiz 1"
   },
   {
     "term": "alb-",
-    "def": "white\n\nEx: corpus albicans of the ovary, a white scar tissue"
+    "def": "white\n\nEx: corpus albicans of the ovary, a white scar tissue",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aliment",
-    "def": "nourish\n\nEx: alimentary canal, or digestive tract"
+    "def": "nourish\n\nEx: alimentary canal, or digestive tract",
+    "quiz": "Quiz 1"
   },
   {
     "term": "allel-",
-    "def": "of one another\n\nEx: alleles, alternative expression of a gene"
+    "def": "of one another\n\nEx: alleles, alternative expression of a gene",
+    "quiz": "Quiz 1"
   },
   {
     "term": "amphi-",
-    "def": "on both sides, of both kinds\n\nEx: amphibian, an organism that is capable of living in water and on land"
+    "def": "on both sides, of both kinds\n\nEx: amphibian, an organism that is capable of living in water and on land",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ana-",
-    "def": "apart, up, again\n\nEx: anaphase of mitosis, when the chromosomes separate"
+    "def": "apart, up, again\n\nEx: anaphase of mitosis, when the chromosomes separate",
+    "quiz": "Quiz 1"
   },
   {
     "term": "anastomos-",
-    "def": "come together\n\nEx: arteriovenous anastomosis, a connection between an artery and a vein"
+    "def": "come together\n\nEx: arteriovenous anastomosis, a connection between an artery and a vein",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aneurysm",
-    "def": "a widening\n\nEx: aortic aneurysm, a weak spot that causes enlargement of the blood vessel"
+    "def": "a widening\n\nEx: aortic aneurysm, a weak spot that causes enlargement of the blood vessel",
+    "quiz": "Quiz 1"
   },
   {
     "term": "angi-",
-    "def": "vessel\n\nEx: angitis, inflammation of a lymph vessel or blood vessel"
+    "def": "vessel\n\nEx: angitis, inflammation of a lymph vessel or blood vessel",
+    "quiz": "Quiz 1"
   },
   {
     "term": "angin-",
-    "def": "choked\n\nEx: angina pectoris, a choked feeling in the chest due to dysfunction of the heart"
+    "def": "choked\n\nEx: angina pectoris, a choked feeling in the chest due to dysfunction of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ant-, anti-",
-    "def": "opposed to, preventing, inhibiting\n\nEx: anticoagulant, a substance that prevents blood coagulation"
+    "def": "opposed to, preventing, inhibiting\n\nEx: anticoagulant, a substance that prevents blood coagulation",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ante-",
-    "def": "preceding, before\n\nEx: antecubital, in front of the elbow"
+    "def": "preceding, before\n\nEx: antecubital, in front of the elbow",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aort-",
-    "def": "great artery\n\nEx: aorta"
+    "def": "great artery\n\nEx: aorta",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ap-, api-",
-    "def": "tip, extremity\n\nEx: apex of the heart"
+    "def": "tip, extremity\n\nEx: apex of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "append-",
-    "def": "hang\n\nEx: to appendicular skeleton"
+    "def": "hang\n\nEx: to appendicular skeleton",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aqua- aque-",
-    "def": "water\n\nEx: aqueous solutions"
+    "def": "water\n\nEx: aqueous solutions",
+    "quiz": "Quiz 1"
   },
   {
     "term": "arbor",
-    "def": "tree\n\nEx: arbor vitae of the cerebellum, the tree-like pattern of white matter"
+    "def": "tree\n\nEx: arbor vitae of the cerebellum, the tree-like pattern of white matter",
+    "quiz": "Quiz 1"
   },
   {
     "term": "areola-",
-    "def": "open space\n\nEx: areolar connective tissue, a loose connective tissue"
+    "def": "open space\n\nEx: areolar connective tissue, a loose connective tissue",
+    "quiz": "Quiz 1"
   },
   {
     "term": "arrect-",
-    "def": "upright\n\nEx: arrector pili muscles of the skin, which make the hairs stand erect"
+    "def": "upright\n\nEx: arrector pili muscles of the skin, which make the hairs stand erect",
+    "quiz": "Quiz 1"
   },
   {
     "term": "arthr- arthro-",
-    "def": "joint\n\nEx: arthropathy, any joint disease"
+    "def": "joint\n\nEx: arthropathy, any joint disease",
+    "quiz": "Quiz 1"
   },
   {
     "term": "artic-",
-    "def": "joint\n\nEx: articular surfaces of bones, the points of connection"
+    "def": "joint\n\nEx: articular surfaces of bones, the points of connection",
+    "quiz": "Quiz 1"
   },
   {
     "term": "atri-",
-    "def": "vestibule\n\nEx: atria, upper chambers of the heart"
+    "def": "vestibule\n\nEx: atria, upper chambers of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "auscult-",
-    "def": "listen\n\nEx: auscultatory method for measuring blood pressure"
+    "def": "listen\n\nEx: auscultatory method for measuring blood pressure",
+    "quiz": "Quiz 1"
   },
   {
     "term": "aut-, auto-",
-    "def": "self\n\nEx: autologous, self-generated"
+    "def": "self\n\nEx: autologous, self-generated",
+    "quiz": "Quiz 1"
   },
   {
     "term": "ax-, axi-, axo-",
-    "def": "axis, axle\n\nEx: axial skeleton, axis of vertebral column"
+    "def": "axis, axle\n\nEx: axial skeleton, axis of vertebral column",
+    "quiz": "Quiz 1"
   },
   {
     "term": "azyg-",
-    "def": "unpaired\n\nEx: azygous vein, an unpaired vessel"
+    "def": "unpaired\n\nEx: azygous vein, an unpaired vessel",
+    "quiz": "Quiz 1"
   },
   {
     "term": "baro-",
-    "def": "pressure\n\nEx: baroreceptors for monitoring blood pressure"
+    "def": "pressure\n\nEx: baroreceptors for monitoring blood pressure",
+    "quiz": "Quiz 1"
   },
   {
     "term": "basal",
-    "def": "base\n\nEx: basal lamina of epithelial basement membrane"
+    "def": "base\n\nEx: basal lamina of epithelial basement membrane",
+    "quiz": "Quiz 1"
   },
   {
     "term": " bi-",
-    "def": "two\n\nEx: bicuspid, having two cusps"
+    "def": "two\n\nEx: bicuspid, having two cusps",
+    "quiz": "Quiz 1"
   },
   {
     "term": "bili-",
-    "def": "bile\n\nEx: bilirubin, a bile pigment"
+    "def": "bile\n\nEx: bilirubin, a bile pigment",
+    "quiz": "Quiz 1"
   },
   {
     "term": "bio-",
-    "def": "life\n\nEx: biology, the study of life and living organisms"
+    "def": "life\n\nEx: biology, the study of life and living organisms",
+    "quiz": "Quiz 1"
   },
   {
     "term": "blast-",
-    "def": "bud, germ\n\nEx: blastocyte, undifferentiated embryonic cell"
+    "def": "bud, germ\n\nEx: blastocyte, undifferentiated embryonic cell",
+    "quiz": "Quiz 1"
   },
   {
     "term": "brachi-",
-    "def": "arm\n\nEx: brachial plexus of peripheral nervous system supplies the arm"
+    "def": "arm\n\nEx: brachial plexus of peripheral nervous system supplies the arm",
+    "quiz": "Quiz 1"
   },
   {
     "term": "brady-",
-    "def": "slow\n\nEx: bradycardia, abnormally slow heart rate"
+    "def": "slow\n\nEx: bradycardia, abnormally slow heart rate",
+    "quiz": "Quiz 1"
   },
   {
     "term": "brev-",
-    "def": "short\n\nEx: fibularis brevis, a short leg muscle"
+    "def": "short\n\nEx: fibularis brevis, a short leg muscle",
+    "quiz": "Quiz 1"
   },
   {
     "term": "broncho,",
-    "def": "bronchus\n\nEx: bronchospasm, spasmodic contraction of bronchial muscle"
+    "def": "bronchus\n\nEx: bronchospasm, spasmodic contraction of bronchial muscle",
+    "quiz": "Quiz 1"
   },
   {
     "term": "bucco-",
-    "def": "cheek\n\nEx: buccolabial, pertaining to the cheek and lip"
+    "def": "cheek\n\nEx: buccolabial, pertaining to the cheek and lip",
+    "quiz": "Quiz 1"
   },
   {
     "term": "calor-",
-    "def": "heat\n\nEx: calories, a measure of energy"
+    "def": "heat\n\nEx: calories, a measure of energy",
+    "quiz": "Quiz 1"
   },
   {
     "term": "capill-",
-    "def": "hair\n\nEx: blood and lymph capillaries"
+    "def": "hair\n\nEx: blood and lymph capillaries",
+    "quiz": "Quiz 1"
   },
   {
     "term": "caput-",
-    "def": "head\n\nEx: decapitate, remove the head"
+    "def": "head\n\nEx: decapitate, remove the head",
+    "quiz": "Quiz 1"
   },
   {
     "term": "carcin-",
-    "def": "cancer\n\nEx: carcinogen, a cancer-causing agent"
+    "def": "cancer\n\nEx: carcinogen, a cancer-causing agent",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cardi- cardio-",
-    "def": "heart\n\nEx: cardiotoxic, harmful to the heart"
+    "def": "heart\n\nEx: cardiotoxic, harmful to the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "carneo-",
-    "def": "flesh\n\nEx: trabeculae carneae, ridges of muscle in the ventricles of the heart"
+    "def": "flesh\n\nEx: trabeculae carneae, ridges of muscle in the ventricles of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "carot-",
-    "def": "(1) carrot, (2) stupor\n\nEx: (1) carotene, an orange pigment, (2) carotid arteries in the neck, blockage of which causes fainting"
+    "def": "(1) carrot, (2) stupor\n\nEx: (1) carotene, an orange pigment, (2) carotid arteries in the neck, blockage of which causes fainting",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cata-",
-    "def": "down\n\nEx: catabolism, chemical breakdown"
+    "def": "down\n\nEx: catabolism, chemical breakdown",
+    "quiz": "Quiz 1"
   },
   {
     "term": "caud-",
-    "def": "tail\n\nEx:caudal (directional term)"
+    "def": "tail\n\nEx:caudal (directional term)",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cec-",
-    "def": "blind\n\nEx: cecum of large intestine, a blind-ended pouch"
+    "def": "blind\n\nEx: cecum of large intestine, a blind-ended pouch",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cele-",
-    "def": "abdominal\n\nEx: celiac artery, in the abdomen"
+    "def": "abdominal\n\nEx: celiac artery, in the abdomen",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cephal-",
-    "def": "head\n\nEx: cephalometer, an instrument for measuring the head"
+    "def": "head\n\nEx: cephalometer, an instrument for measuring the head",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cerebro-",
-    "def": "brain\n\nEx: especially the cerebrum cerebrospinal, pertaining to the brain and spinal cord"
+    "def": "brain\n\nEx: especially the cerebrum cerebrospinal, pertaining to the brain and spinal cord",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cervic-, cervix",
-    "def": "neck\n\nEx: cervix of the uteris"
+    "def": "neck\n\nEx: cervix of the uteris",
+    "quiz": "Quiz 1"
   },
   {
     "term": "chiasm-",
-    "def": "crossing\n\nEx: optic chiasma, where optic nerves nerves cross"
+    "def": "crossing\n\nEx: optic chiasma, where optic nerves nerves cross",
+    "quiz": "Quiz 1"
   },
   {
     "term": "chole-",
-    "def": "bile\n\nEx: cholesterol, cholecystokinin, a bile-secreting hormone"
+    "def": "bile\n\nEx: cholesterol, cholecystokinin, a bile-secreting hormone",
+    "quiz": "Quiz 1"
   },
   {
     "term": "chondr-",
-    "def": "cartilage\n\nEx: chondrogenic, giving rise to cartilage"
+    "def": "cartilage\n\nEx: chondrogenic, giving rise to cartilage",
+    "quiz": "Quiz 1"
   },
   {
     "term": "chrom-",
-    "def": "colored\n\nEx: chromosome, so named because they stain darkly"
+    "def": "colored\n\nEx: chromosome, so named because they stain darkly",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cili-",
-    "def": "small hair\n\nEx: cilated epithelium"
+    "def": "small hair\n\nEx: cilated epithelium",
+    "quiz": "Quiz 1"
   },
   {
     "term": "circum-",
-    "def": "around\n\nEx: circumnuclear, surrounding the nucleus"
+    "def": "around\n\nEx: circumnuclear, surrounding the nucleus",
+    "quiz": "Quiz 1"
   },
   {
     "term": "clavic-",
-    "def": "key\n\nEx: clavicle, a 'skeleton key'"
+    "def": "key\n\nEx: clavicle, a 'skeleton key'",
+    "quiz": "Quiz 1"
   },
   {
     "term": "co-, con-",
-    "def": "together\n\nEx: concentric, common center, together in the center"
+    "def": "together\n\nEx: concentric, common center, together in the center",
+    "quiz": "Quiz 1"
   },
   {
     "term": "coccy-",
-    "def": "cuckoo\n\nEx: coccyx, which is beak-shaped"
+    "def": "cuckoo\n\nEx: coccyx, which is beak-shaped",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cochlea-",
-    "def": "snail shell\n\nEx: the cochlea of the inner ear, which is coiled like a snail shell"
+    "def": "snail shell\n\nEx: the cochlea of the inner ear, which is coiled like a snail shell",
+    "quiz": "Quiz 1"
   },
   {
     "term": "coel-",
-    "def": "hollow\n\nEx: coelom, the ventral body cavity"
+    "def": "hollow\n\nEx: coelom, the ventral body cavity",
+    "quiz": "Quiz 1"
   },
   {
     "term": "commis-",
-    "def": "united\n\nEx: gray commissure of the spinal cord connects the two columns of gray matter"
+    "def": "united\n\nEx: gray commissure of the spinal cord connects the two columns of gray matter",
+    "quiz": "Quiz 1"
   },
   {
     "term": "concha",
-    "def": "shell\n\nEx: nasal conchae, coiled shelves of bone in the nasal cavity"
+    "def": "shell\n\nEx: nasal conchae, coiled shelves of bone in the nasal cavity",
+    "quiz": "Quiz 1"
   },
   {
     "term": "contra-",
-    "def": "against, opposite\n\nEx: contraceptive, agent preventing conception"
+    "def": "against, opposite\n\nEx: contraceptive, agent preventing conception",
+    "quiz": "Quiz 1"
   },
   {
     "term": "corn-, cornu-",
-    "def": "horn\n\nEx: stratum corneum, outer layer of the skin composed of (horny) cells"
+    "def": "horn\n\nEx: stratum corneum, outer layer of the skin composed of (horny) cells",
+    "quiz": "Quiz 1"
   },
   {
     "term": "corona",
-    "def": "crown\n\nEx: coronal suture of the skull"
+    "def": "crown\n\nEx: coronal suture of the skull",
+    "quiz": "Quiz 1"
   },
   {
     "term": "corp-",
-    "def": "body\n\nEx: corpse, corpus luteum, hormone-secreting body in the ovary"
+    "def": "body\n\nEx: corpse, corpus luteum, hormone-secreting body in the ovary",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cort-",
-    "def": "bark\n\nEx: cortex, the outer layer of the brain, kidney, adrenal glands, and lymph nodes"
+    "def": "bark\n\nEx: cortex, the outer layer of the brain, kidney, adrenal glands, and lymph nodes",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cost-",
-    "def": "rib\n\nEx: intercostal, between the ribs"
+    "def": "rib\n\nEx: intercostal, between the ribs",
+    "quiz": "Quiz 1"
   },
   {
     "term": "crani-",
-    "def": "skull\n\nEx: craniotomy, a skull operation"
+    "def": "skull\n\nEx: craniotomy, a skull operation",
+    "quiz": "Quiz 1"
   },
   {
     "term": "crypt-",
-    "def": "hidden\n\nEx: cryptomenorrhea, a condition in which menstrual symptoms are experienced but no external loss of blood occurs"
+    "def": "hidden\n\nEx: cryptomenorrhea, a condition in which menstrual symptoms are experienced but no external loss of blood occurs",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cusp-",
-    "def": "pointed\n\nEx: bicuspid, tricuspid valves of the heart"
+    "def": "pointed\n\nEx: bicuspid, tricuspid valves of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cutic-",
-    "def": "skin\n\nEx: cuticle of the nail"
+    "def": "skin\n\nEx: cuticle of the nail",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cyan-",
-    "def": "blue\n\nEx: cyanosis, blue color of the skin due to lack of oxygen"
+    "def": "blue\n\nEx: cyanosis, blue color of the skin due to lack of oxygen",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cyst-",
-    "def": "sac\n\nEx: bladder cystitis, inflammation of the urinary bladder"
+    "def": "sac\n\nEx: bladder cystitis, inflammation of the urinary bladder",
+    "quiz": "Quiz 1"
   },
   {
     "term": "cyt-",
-    "def": "cell\n\nEx: cytology, the study of cells"
+    "def": "cell\n\nEx: cytology, the study of cells",
+    "quiz": "Quiz 1"
   },
   {
     "term": "de-",
-    "def": "undoing, reversal, loss, removal\n\nEx: deactivation, becoming inactive"
+    "def": "undoing, reversal, loss, removal\n\nEx: deactivation, becoming inactive",
+    "quiz": "Quiz 1"
   },
   {
     "term": "decid-",
-    "def": "falling off\n\nEx: deciduous (milk) teeth"
+    "def": "falling off\n\nEx: deciduous (milk) teeth",
+    "quiz": "Quiz 1"
   },
   {
     "term": "delta",
-    "def": "triangular\n\nEx: deltoid muscle, roughly triangular in shape"
+    "def": "triangular\n\nEx: deltoid muscle, roughly triangular in shape",
+    "quiz": "Quiz 1"
   },
   {
     "term": "den-, dent-",
-    "def": "tooth\n\nEx: dentin of the tooth"
+    "def": "tooth\n\nEx: dentin of the tooth",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dendr-",
-    "def": "tree, branch\n\nEx: dendrites, branches of a neuron"
+    "def": "tree, branch\n\nEx: dendrites, branches of a neuron",
+    "quiz": "Quiz 1"
   },
   {
     "term": "derm-",
-    "def": "skin\n\nEx: dermis- deep layer of the skin"
+    "def": "skin\n\nEx: dermis- deep layer of the skin",
+    "quiz": "Quiz 1"
   },
   {
     "term": "desm-",
-    "def": "bond\n\nEx: desmosome, which binds adjacent epithelial cells"
+    "def": "bond\n\nEx: desmosome, which binds adjacent epithelial cells",
+    "quiz": "Quiz 1"
   },
   {
     "term": "di-",
-    "def": "twice, double\n\nEx: dimorphism, having two forms"
+    "def": "twice, double\n\nEx: dimorphism, having two forms",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dia-",
-    "def": "through, between\n\nEx: diaphram, the wall through or between two areas"
+    "def": "through, between\n\nEx: diaphram, the wall through or between two areas",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dialys-",
-    "def": "separate, break apart\n\nEx: kidney dialysis, in which waste products are removed from the blood"
+    "def": "separate, break apart\n\nEx: kidney dialysis, in which waste products are removed from the blood",
+    "quiz": "Quiz 1"
   },
   {
     "term": "diastol-",
-    "def": "stand apart\n\nEx: cardiac diastole, between successive contractions of the heart"
+    "def": "stand apart\n\nEx: cardiac diastole, between successive contractions of the heart",
+    "quiz": "Quiz 1"
   },
   {
     "term": "diure-",
-    "def": "urinate\n\nEx: diuretic, a drug that increases urine output"
+    "def": "urinate\n\nEx: diuretic, a drug that increases urine output",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dors-",
-    "def": "the back\n\nEx: dorsal, dorsum, dorsiflexion"
+    "def": "the back\n\nEx: dorsal, dorsum, dorsiflexion",
+    "quiz": "Quiz 1"
   },
   {
     "term": "duc-, duct-",
-    "def": "lead, draw\n\nEx: ductus deferens, tube which carries sperm from the epididymis into the urethra during ejaculation"
+    "def": "lead, draw\n\nEx: ductus deferens, tube which carries sperm from the epididymis into the urethra during ejaculation",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dura",
-    "def": "hard\n\nEx: dura mater, tough outer meninx"
+    "def": "hard\n\nEx: dura mater, tough outer meninx",
+    "quiz": "Quiz 1"
   },
   {
     "term": "dys-",
-    "def": "difficult, faulty, painful\n\nEx: dyspepsia, disturbed digestion"
+    "def": "difficult, faulty, painful\n\nEx: dyspepsia, disturbed digestion",
+    "quiz": "Quiz 1"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "",
+    "quiz": "Quiz 2"
   }
 ]
