@@ -615,158 +615,528 @@
     "quiz": "Quiz 2"
   },
   {
-    "term": "",
-    "def": "\n\nEx; ",
+    "term": "flagell-",
+    "def": "whip\n\nEx: flagellum, the tail of a sperm cell",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "flat-",
+    "def": "blow, blown\n\nEx: flatulence",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "folli-",
+    "def": "bag, bellows\n\nEx: hair follicle ",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "fontan-",
+    "def": "fountain\n\nEx: fontanelles of the fetal skull",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "foram-",
+    "def": "opening\n\nEx: foramen magnum of the skull",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "foss-",
+    "def": "ditch\n\nEx: fossa ovalis of the heart; mandibular fossa of the skull",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gam-, gamet-",
+    "def": "married, spouse\n\nEx: gametes, the sex cells",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gangli-",
+    "def": "swelling, knot\n\nEx: dorsal root ganglia of the spinal nerves",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gastr-",
+    "def": "stomach\n\nEx: gastrin, a hormone that influences gastric acid secretion",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gene-",
+    "def": "beginning, origin\n\nEx: genetics",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "germin-",
+    "def": "grow\n\nEx: germinal epithelium of the gonads",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gero-, geront-",
+    "def": "old man\n\nEx: gerontology, the study of aging",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gest-",
+    "def": "carried\n\nEx: gestation, the period from conceptoin to birth",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "glauc-",
+    "def": "gray\n\nEx: glaucoma, which causes gradual blindness",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "glom-",
+    "def": "ball\n\nEx: glomeruli, clusters of capillaries in the kidneys",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "glosso-",
+    "def": "tongue\n\nEx: glossopathy, any disease of the tongue",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gluco-, glyco-",
+    "def": "gluconeogenesis\n\nEx: the productoin of glucose from noncarbohydrate molecules",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "glute-",
+    "def": "buttock\n\nEx: gluteus maximus, largest muscle of the buttock",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gnost-",
+    "def": "knowing\n\nEx: the gnostic sense, a sense of awareness of self",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gompho-",
+    "def": "nail\n\nEx: gomphosis, the term applied to the joint between tooth and jaw",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gon-, gono-",
+    "def": "seed, offspring\n\nEx: gonads, the sex organs",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "gust-",
+    "def": "taste\n\nEx: gustatory sense, the sense of taste",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hapt-",
+    "def": "fasten, grasp\n\nEx: hapten, a partial antigen",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hema-, hemato-, hemo-",
+    "def": "blood\n\nEx: hematocyst, a cyst containing blood",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hemi-",
+    "def": "half\n\nEx: hemiglossal, pertaining to one-half of the tongue",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hepat-",
+    "def": "liver\n\nEx: hepatitis, inflammation of the liver",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hetero-",
+    "def": "different or other\n\nEx: heterosexuality, sexual desire for a person of the opposite sex",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hiat-",
+    "def": "gap\n\nEx: the hiatus of the diaphragm, the opening through which the esophagus passes",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hippo-",
+    "def": "horse\n\nEx: hippocampus of the brain, shaped like a seahorse",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "hirsut-",
+    "def": "hairy\n\nEx: hirsutism, excessive body hair",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   },
   {
     "term": "",
-    "def": "\n\nEx; ",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
+    "quiz": "Quiz 2"
+  },
+  {
+    "term": "",
+    "def": "\n\nEx:",
     "quiz": "Quiz 2"
   }
 ]
