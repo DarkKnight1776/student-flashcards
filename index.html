@@ -384,6 +384,15 @@
 
       const THEME_KEY = "ap1-theme";
       const QUIZ_KEY = "ap1-selected-quizzes";
+      const QUIZ_LABELS = {
+        "Quiz 1": "Quiz 1 (a- to dys-)",
+        "Quiz 2": "Quiz 2 (ec- to neo-)",
+        "Quiz 3": "Quiz 3 (nephro- to zyg-)",
+        "Quiz 4": "Quiz 4 (-able to -zyme)",
+      };
+      function quizLabel(q) {
+        return QUIZ_LABELS[q] || q;
+      }
       let theme = localStorage.getItem(THEME_KEY) || "light";
       let selectedQuizzes = null;
 
@@ -570,7 +579,7 @@
           ${quizList
             .map(
               (q) => `
-            <button class="quiz-btn ${selectedQuizzes.has(q) ? "active" : ""}" data-quiz="${esc(q)}">${esc(q)}</button>
+            <button class="quiz-btn ${selectedQuizzes.has(q) ? "active" : ""}" data-quiz="${esc(q)}">${esc(quizLabel(q))}</button>
           `,
             )
             .join("")}
